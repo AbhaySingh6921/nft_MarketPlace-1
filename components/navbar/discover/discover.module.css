@@ -1,0 +1,23 @@
+.discover {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.discover:hover {
+  background-color: #69a9e8; /* Light hover background */
+}
+
+.discover a {
+  text-decoration: none;
+  color: #2d3748; /* Dark slate */
+  font-size: 0.95rem;
+  display: block;
+  font-weight: 500;
+ 
+}
+
+.discover a:hover {
+  color: #1e1f21; /* Indigo hover color */
+}

@@ -1,0 +1,79 @@
+.Brand {
+  width: 100%;
+  background-color: #f7f8fa;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Brand_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.Brand_box_left {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.Brand_box_left h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.Brand_box_left p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.Brand_box_left_btn {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.Brand_box_right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Brand_box_right img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Brand_box {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Brand_box_left h1 {
+    font-size: 2rem;
+  }
+
+  .Brand_box_left p {
+    font-size: 1rem;
+  }
+
+  .Brand_box_left_btn {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,142 @@
+/* authorprofilecard.module.css */
+
+.authorProfileCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.AuthorProfileCard_box {
+  background: linear-gradient(to bottom, #ffffff, #f1f4f9);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+
+.AuthorProfileCard_box_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.AuthorProfileCard_box_img_img {
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.AuthorProfileCard_box_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.AuthorProfileCard_box_info h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2a2a2a;
+}
+
+.AuthorProfileCard_box_info_address {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.AuthorProfileCard_box_info_address input {
+  border: none;
+  background: #f0f0f0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  width: auto;
+  color:#2a2a2a
+}
+
+.AuthorProfileCard_box_info_address_icon {
+  cursor: pointer;
+  color: #555;
+}
+
+.AuthorProfileCard_box_info p {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.AuthorProfileCard_box_info_social {
+  display: flex;
+  gap: 4rem;
+  margin-top: 0.5rem;
+}
+
+.AuthorProfileCard_box_info_social a {
+  font-size: 1.5rem;
+  color: #2b2727;
+}
+
+.AuthorProfileCard_box_share {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.AuthorProfileCard_box_share_icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.AuthorProfileCard_box_share_upload {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.AuthorProfileCard_box_share_upload:hover {
+    background: #e6e4e4;
+}
+
+
+.AuthorProfileCard_box_share_upload p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.AuthorProfileCard_box_share_report {
+  background: rgb(247, 243, 243);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  color: #c0392b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

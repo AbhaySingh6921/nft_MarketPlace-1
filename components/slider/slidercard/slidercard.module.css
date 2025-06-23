@@ -1,0 +1,110 @@
+.sliderCard {
+  min-width: 270px;
+  max-width: 300px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+.sliderCard:active {
+  cursor: grabbing;
+}
+
+.slideCard_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.slideCard_box_img {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.slideCard_box_img img {
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.slideCard_box_title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.slideCard_box_title_like {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.slideCard_box_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.slideCard_box_price_box,
+.slideCard_box_box_price_time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.slideCard_box_price_box p,
+.slideCard_box_box_price_time p {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .sliderCard {
+    min-width: 230px;
+  }
+
+  .slideCard_box_img {
+    height: 150px;
+  }
+
+  .slideCard_box_title {
+    font-size: 0.9rem;
+  }
+
+  .slideCard_box_price {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sliderCard {
+    min-width: 200px;
+  }
+
+  .slideCard_box_img {
+    height: 130px;
+  }
+
+  .slideCard_box {
+    padding: 0.75rem;
+  }
+
+  .slideCard_box_title {
+    font-size: 0.85rem;
+  }
+
+  .slideCard_box_price {
+    font-size: 0.8rem;
+  }
+}

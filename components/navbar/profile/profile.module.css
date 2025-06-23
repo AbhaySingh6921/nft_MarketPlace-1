@@ -1,0 +1,93 @@
+.profile {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile_Account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.profile_Account_img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile_Account_info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.profile_Account_info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+  word-wrap: break-word; /* Force wrapping on long words */
+  overflow-wrap: break-word;
+}
+
+.profile_Account_info small {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.profile_menu {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile_menu_one,
+.profile_menu_two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile_menu_one_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+  flex-wrap: wrap; /* Ensures full wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.profile_menu_one_item:hover {
+  background-color: #4699eb;
+  cursor: pointer;
+}
+
+.profile_menu_one_item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2d3748;
+  transition: color 0.3s ease;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.profile_menu_one_item p:hover {
+  color: #2b6cb0;
+}
+
+/* Make links inherit style */
+.profile_menu_one_item p a {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+  word-break: break-word;
+}

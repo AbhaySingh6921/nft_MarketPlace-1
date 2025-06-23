@@ -1,0 +1,107 @@
+.collectionProfile {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.collectionProfile_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.collectionProfile_box_left {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.collectionProfile_box_left_img {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.collectionProfile_box_left_socail {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.collectionProfile_box_left_socail a {
+  color: #666;
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.collectionProfile_box_left_socail a:hover {
+  color: #111;
+}
+
+.CollectionProfile_box_middle {
+  flex: 2 1 500px;
+}
+
+.CollectionProfile_box_middle h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.CollectionProfile_box_middle p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.CollectionProfile_box_middle_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.CollectionProfile_box_middle_box_item {
+  background-color: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.CollectionProfile_box_middle_box_item small {
+  display: block;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.CollectionProfile_box_middle_box_item span {
+  font-size: 0.8rem;
+  color: #007e33;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .collectionProfile_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CollectionProfile_box_middle {
+    text-align: center;
+  }
+
+  .CollectionProfile_box_middle_box {
+    justify-content: center;
+  }
+}

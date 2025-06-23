@@ -1,0 +1,144 @@
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #e8e9ed;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filter_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter_box_left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter_box_left button {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  color: #4d4949;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter_box_left button:hover {
+  background-color: #e0e0e0;
+}
+
+.filter_box_right {
+  display: flex;
+  align-items: center;
+}
+
+.filter_box_right_box {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: #33334D;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.filter_box_right_box:hover {
+  background-color: #4555e4;
+}
+
+/* Dropdown content */
+.filter_box_items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color:white
+}
+
+.filter_box_items_box {
+  display: flex;
+  align-items: center;
+}
+
+.filter_box_items_box_item
+{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #3f434d;;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  
+  transition: background-color 0.2s ease;
+}
+.filter_box_items_box_item_trans {
+    display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #d2d1d8;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color:black;
+  transition: background-color 0.2s ease;
+}
+
+
+.filter_box_items_box_item_trans:hover {
+  background-color: #4d6dda;
+}
+
+.filter_box_items_box_item span,
+.filter_box_items_box_item small {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .filter {
+    padding: 0.8rem;
+  }
+
+  .filter_box_left button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .filter_box_right_box {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .filter_box_items_box_item,
+  .filter_box_items_box_item_trans {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filter_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter_box_left,
+  .filter_box_right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,67 @@
+/* notification.module.css */
+
+.notification {
+  padding: 0.5rem 0;
+}
+
+.notification p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.notification_box {
+  display:flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 0.5rem 0;
+  border-bottom: 4px solid #b2c3d8;
+  position: relative;
+}
+
+.notification_box_img {
+  border-radius: 50%;
+  overflow: hidden;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.notification_box_info {
+  flex: 1;
+  background-color: #b2c3d8;
+}
+
+.notification_box_info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.notification_box_info p {
+  margin: 10;
+  font-size: 0.85rem;
+  color: #4b4949;
+
+}
+
+.notification_box_info small {
+  font-size: 0.75rem;
+  color: #a0aec0;
+}
+
+/* Blue dot to indicate a new notification */
+.notification_box_new {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+.notification_box_info .p:hover {
+  color: #2b6cb0; /* A more noticeable blue on hover */
+  cursor: pointer;
+}

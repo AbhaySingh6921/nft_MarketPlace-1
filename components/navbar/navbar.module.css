@@ -1,0 +1,195 @@
+/* Navbar wrapper */
+.navbar {
+  width: 100%;
+  padding-block: 1.5rem;
+  position: relative;
+  z-index: 9999;
+  background-color: #f9fbfc;
+}
+
+/* Container grid */
+.navbar_container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== LEFT (Logo) ===== */
+.navbar_container_left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== SEARCH BOX ===== */
+.navbar_container_left_box_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #cbd5e0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar_container_left_box_input_box {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search_icon {
+  font-size: 1.1rem;
+  color: #718096;
+  cursor: pointer;
+}
+
+/* ===== RIGHT MENU ===== */
+.navbar_container_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+/* Dropdown trigger text */
+.navbar_container_right_discover,
+.navbar_container_right_help {
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #2d3748;
+}
+
+/* Dropdown box */
+.navbar_container_right_help_box,
+.navbar_container_right_discover_box {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: #fff;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 8px 16px rgba(67, 48, 214, 0.1);
+  z-index: 100;
+}
+
+/* Notification */
+.navbar_container_right_notify {
+  position: relative;
+}
+
+.notify {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4a5568;
+}
+
+.navbar_container_right_notify_box {
+  position: absolute;
+  top: 2.0rem;
+  right: 0;
+  background-color: #fff;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px rgba(67, 58, 206, 0.1);
+  z-index: 100;
+  color:#2d3748;
+}
+
+/* Create Button */
+.navbar_container_right_button {
+  display: flex;
+  align-items: center;
+  color:#2d3748;
+}
+
+/* Profile */
+.navbar_container_right_profile_box {
+  position: relative;
+  color:black;
+}
+
+.navbar_container_right_profile {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #e2e8f0;
+}
+
+.navbar_container_right_profile_box_card {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  background-color: #fff;
+  width: 220px;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Mobile Sidebar Icon - Hidden by default */
+.navbar_container_right_menubtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sidebar - Hidden by default */
+.sideBar {
+  display: none;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  .navbar_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Hide search box on mobile */
+  .navbar_container_left_box_input {
+    display:reference;
+  }
+
+  /* Hide regular menu items on mobile */
+  
+
+  /* Show menu button on mobile */
+  .navbar_container_right_menubtn {
+    display: flex;
+  }
+
+  .menuIcon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #4a5568;
+  }
+
+  /* Show sidebar when open */
+  .sideBar {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    transition: all 0.3s ease;
+  }
+}

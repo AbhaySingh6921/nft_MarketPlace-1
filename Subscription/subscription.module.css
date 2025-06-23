@@ -1,0 +1,114 @@
+.SubscriptionBox {
+  perspective: 1000px;
+}
+
+.SubscriptionBox_box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.SubscriptionBox_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.SubscriptionBox_box_span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.SubscriptionBox_box_small {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.SubscriptionBox_box_small_para {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3498db;
+  margin: 1rem 0;
+}
+
+.SubscriptionBox_box_small_para::before {
+  content: attr(data-currency);
+  font-size: 1rem;
+  vertical-align: super;
+  margin-right: 0.25rem;
+}
+
+.SubscriptionBox_box_small_para::after {
+  content: attr(data-period);
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+.SubscriptionBox_box_info {
+  margin: 1.5rem 0;
+  flex-grow: 1;
+}
+
+.SubscriptionBox_box_para {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.SubscriptionBox_box_para span {
+  color: #2ecc71;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #2980b9, #1a252f);
+  transform: translateY(-2px);
+}
+
+/* Popular plan highlight */
+.SubscriptionBox_box[data-popular="Popular"] {
+  border-top: 4px solid #3498db;
+}
+
+.SubscriptionBox_box[data-popular="Popular"] .button {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.SubscriptionBox_box[data-popular="Popular"] .button:hover {
+  background: linear-gradient(135deg, #27ae60, #219653);
+}

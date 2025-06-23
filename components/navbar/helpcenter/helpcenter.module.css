@@ -1,0 +1,23 @@
+/* helpcenter.module.css */
+
+.helpCenter {
+  padding: 0.25rem 0;
+}
+.helpCenter:hover{
+    background-color: #69a9e8;
+}
+
+/* Link style */
+.helpCenter a {
+  text-decoration: none;
+  color: #2d3748; /* Dark slate */
+  font-size: 0.95rem;
+  display: block;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.helpCenter a:hover {
+  color: #313034; /* Indigo */
+}

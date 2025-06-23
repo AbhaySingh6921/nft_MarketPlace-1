@@ -1,0 +1,51 @@
+.contactus {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f8;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contactus_box {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.contactus_box_box_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #1f2937;
+}
+
+.contactus_box_box_left_item h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.contactus_box_box_left_item p,
+.contactus_box_box_left_item a {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  display: block;
+}
+
+.contactus_box_box_left_item a svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}

@@ -1,0 +1,38 @@
+.subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.subscription_box {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.subscription_box_info {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subscription_box_info h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.subscription_box_info p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.subscription_box_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}

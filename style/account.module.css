@@ -1,0 +1,65 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.account_info {
+  text-align: center;
+}
+
+.account_info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.account_info p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.account_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.account_box_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.account_box_img:hover {
+  transform: scale(1.02);
+}
+
+.account_box_img_img {
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  object-fit: cover;
+}
+
+.account_box_img_para {
+  margin-top: 0.5rem;
+  color: #0070f3;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.account_box_form {
+  flex: 1;
+  min-width: 300px;
+}

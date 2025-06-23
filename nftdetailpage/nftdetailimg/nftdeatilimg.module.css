@@ -1,0 +1,126 @@
+.NFTDeatilImg {
+  width: 100%;
+  max-width: 500px; /* Container max width */
+  margin: 0 auto;
+}
+
+.NFTDeatilImg_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* NFT Image Container - Made smaller */
+.NFTDeatilImg_box_NFT {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* Smaller container */
+  margin: 0 auto;
+}
+
+.NFTDeatilImg_box_NFT_like {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.3rem 0.6rem;
+  border-radius: 2rem;
+}
+
+.NFTDeatilImg_box_NFT_like_icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--icons-color);
+}
+
+.NFTDeatilImg_box_NFT_like p {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.NFTDeatilImg_box_NFT_img {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.NFTDeatilImg_box_NFT_img_img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 350px; /* Smaller image height */
+  object-fit: cover;
+}
+
+/* Description Section */
+.NFTDeatilImg_box_description,
+.NFTDeatilImg_box_detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--shadow-dark-color);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.NFTDeatilImg_box_description p,
+.NFTDeatilImg_box_detail p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.NFTDeatilImg_box_description_box,
+.NFTDeatilImg_box_detail_box {
+  padding: 0.8rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.NFTDeatilImg_box_detail_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.NFTDeatilImg_box_detail_box small {
+  color: var(--icons-color);
+  font-size: 0.8rem;
+}
+
+/* Hover effects */
+.NFTDeatilImg_box_NFT_like_icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.NFTDeatilImg_box_description:hover,
+.NFTDeatilImg_box_detail:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .NFTDeatilImg {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .NFTDeatilImg_box_NFT {
+    max-width: 300px;
+  }
+  
+  .NFTDeatilImg_box_NFT_img_img {
+    max-height: 300px;
+  }
+}

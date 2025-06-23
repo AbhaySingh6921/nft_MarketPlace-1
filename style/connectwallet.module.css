@@ -1,0 +1,67 @@
+.connectWallet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.connectWallet_box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connectWallet_box h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.connectWallet_box p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.connectWallet_box_provider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.connectWallet_box_provider_item {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.connectWallet_box_provider_item:hover {
+  border-color: #6366f1; /* Tailwind indigo-500 */
+  transform: translateY(-3px);
+}
+
+.connectWallet_box_provider_item_img {
+  margin-bottom: 0.75rem;
+}
+
+.connectWallet_box_provider_item p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.active {
+  border-color: #4f46e5 !important; /* Tailwind indigo-600 */
+  background-color: #eef2ff;         /* Tailwind indigo-100 */
+}

@@ -1,0 +1,123 @@
+.daysComponents {
+    width:100%;
+    border-radius: 1rem;
+    transition:all .3s ease-in;
+    cursor:pointer;
+}
+
+.daysComponents_box {
+  width: 100%;
+  max-width: 800px;
+  background: #d9d9df;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.daysComponents_box:hover {
+  box-shadow:var(--box-shadow)
+}
+
+
+.daysComponents_box_img_img {
+   border-radius: 1rem;
+}
+
+.daysComponents_box_profile {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: .5rem;
+}
+
+
+.dayComponents_box_title {
+  padding: 1rem 2 rem;
+ line-height: 0;
+}
+
+.dayComponents_box_title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dayComponents_box_title_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.dayComponents_box_title_info_profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.daysComponents_box_profile_img {
+  border-radius: 50%;
+}
+
+.dayComponents_box_title_info_profile span {
+ font-weight: 600;
+ padding-inline:.5rem;
+}
+
+.daysComponents_box_title_info_price  small{
+  padding:.5rem;
+  font-weight: 600;
+  border:3px solid var(--icons-color);
+  border-radius: .5rem;
+}
+@media (max-width: 768px) {
+  .daysComponents_box {
+    max-width: 90%;
+  }
+
+  .daysComponents_box_img_1,
+  .daysComponents_box_img_2,
+  .daysComponents_box_img_3 {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .dayComponents_box_title h2 {
+    font-size: 1.25rem;
+  }
+
+  .dayComponents_box_title_info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .daysComponents_box {
+    border-radius: 1rem;
+  }
+
+  .daysComponents_box_img_1,
+  .daysComponents_box_img_2,
+  .daysComponents_box_img_3 {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .daysComponents_box_profile {
+    gap: 0.5rem;
+    margin-top: -30px;
+  }
+
+  .dayComponents_box_title h2 {
+    font-size: 1.1rem;
+  }
+
+  .dayComponents_box_title_info_profile p {
+    font-size: 0.9rem;
+  }
+
+  .daysComponents_box_title_info_price small {
+    font-size: 0.9rem;
+  }
+}

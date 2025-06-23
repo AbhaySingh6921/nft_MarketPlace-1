@@ -1,0 +1,100 @@
+.FollowerTabCard {
+  width: 100%;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.FollowerTabCard:hover {
+  transform: translateY(-4px);
+}
+
+.FollowerTabCard_rank {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  background-color: #facc15;
+  color: #000;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  z-index: 10;
+}
+
+.FollowerTabCard_box {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.FollowerTabCard_box_img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.FollowerTabCard_box_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.FollowerTabCard_box_profile {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.FollowerTabCard_box_profile_img {
+  border: 3px solid white;
+  border-radius: 9999px;
+}
+
+.FollowerTabCard_box_info {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.FollowerTabCard_box_name h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.FollowerTabCard_box_name p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.FollowerTabCard_box_info_following a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.FollowerTabCard_box_info_following a:hover {
+  background-color: #2563eb;
+}
+
+.FollowerTabCard_box_info_following a span {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,131 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;       /* Full screen on mobile */
+  height: 100vh;
+  background-color: #cd3e3e;
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBar_closBtn {
+  font-size: 1.8rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sideBar_box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sideBar_box p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.sideBar_social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.sideBar_social a {
+  font-size: 1.8rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.sideBar_social a:hover {
+  color: #0070f3; /* Accent blue on hover */
+}
+
+.sideBar_menu {
+  flex-grow: 1;
+}
+
+.sideBar_menu_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  user-select: none;
+  color: #222;
+}
+
+.sideBar_discover p {
+  margin-left: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sideBar_discover p a {
+  color: #444;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sideBar_discover p a:hover {
+  color: #0070f3;
+}
+
+.sideBar_button {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sideBar_button button {
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sideBar_button button:hover {
+  background-color: #005bb5;
+}
+
+/* Scrollbar for sidebar on mobile */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+/* Responsive Fixes */
+@media(min-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 280px;
+    height: auto;
+    box-shadow: none;
+    padding: 20px 10px;
+  }
+  .sideBar_closBtn {
+    display: none;
+  }
+}

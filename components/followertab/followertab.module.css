@@ -1,0 +1,65 @@
+.followerTab {
+  width: 100%;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+}
+
+.followerTab h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.followerTab_tabs {
+  margin-bottom: 2rem;
+}
+
+.followerTab_tabs_btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.followerTab_tabs_btn button {
+  background-color: #e5e7eb;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111827;
+  transition: background 0.3s ease;
+}
+
+.followerTab_tabs_btn button:hover {
+  background-color: #d1d5db;
+}
+
+.followerTab_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.followerTab_member {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.followerTab_member_box a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.followerTab_member_box a:hover {
+  color: #2563eb;
+}

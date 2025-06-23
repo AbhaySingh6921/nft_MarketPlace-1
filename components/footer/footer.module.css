@@ -1,0 +1,117 @@
+.footer {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  color: #181eca;
+}
+
+/* --- Social Section --- */
+.footer_box_social {
+  flex: 2 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #171615;
+ 
+}
+
+.footer_box_social p {
+  font-size: 1.95rem;
+  color: #3d3b3a;
+  line-height: 1.6;
+}
+
+.footer_social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: #d30f0f;
+}
+.footer_box_social a:hover{
+    color: #3194e4;
+}
+.footer_box_social a{
+    font-size: 1.8rem;
+    padding: 7.5;
+
+}
+
+/* --- Subscribe Section --- */
+.subscribe {
+  flex: 1 1 250px;
+}
+
+.subscribe h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.subsribe_bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #2773e5;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 0 0.75rem;
+}
+
+.subsribe_bar input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.95rem;
+  background-color: transparent;
+  color: #4b5563;
+}
+
+.subscribe_box_send {
+  font-size: 1.2rem;
+  color: #102ec2;
+  cursor: pointer;
+}
+
+.subscription_box_info {
+  margin-top: 0.75rem;
+}
+
+.subscription_box_info p {
+  font-size: 0.9rem;
+  color: #3f4144;
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+  .footer_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_box_social,
+  .subscribe {
+    width: 100%;
+  }
+
+  .footer_social {
+    justify-content: flex-start;
+  }
+
+  .subscribe_box_send {
+    font-size: 1.4rem;
+  }
+}

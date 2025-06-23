@@ -1,0 +1,24 @@
+.AuthorNFTCardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.AuthorNFTCardBox > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .AuthorNFTCardBox {
+    padding: 1rem;
+  }
+
+  .AuthorNFTCardBox > div {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+}

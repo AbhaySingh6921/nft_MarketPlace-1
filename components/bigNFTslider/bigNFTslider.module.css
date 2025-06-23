@@ -1,0 +1,280 @@
+/* bigNFTslider.module.css */
+
+.bigNFTslider {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* minimal light gradient */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bigNFTSlider_box {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.bigNFTSlider_box_left,
+.bigNFTSlider_box_right {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bigNFTSlider_box_left h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.bigNFTSlider_box_left_creator {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #555;
+}
+
+.bigNFTSlider_box_left_creator_profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bigNFTSlider_box_left_creator_profile_image img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bigNFTSlider_box_left_creator_profile p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #777;
+}
+
+.bigNFTSlider_box_left_creator_profile h {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #222;
+}
+
+.bigNFTSlider_box_left_creator_profile h span svg {
+  color: #4caf50; /* verified green */
+  font-size: 1.2rem;
+}
+
+.bigNFTSlider_box_left_creator_collection {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.bigNFTSlider_box_left_creator_collection_icon {
+  font-size: 1.5rem;
+  color: #ff5722;
+}
+
+.bigNFTSlider_box_left_creator_collection_info p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #777;
+}
+
+.bigNFTSlider_box_left_creator_collection_info h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.bigNFTSlider_box_left_bidding {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bigNFTSlider_box_left_bidding_box {
+  background: #f1f3f5;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.bigNFTSlider_box_left_bidding_box small {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.bigNFTSlider_box_left_bidding_box p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0 0;
+  color: #222;
+}
+
+.bigNFTSlider_box_left_bidding_box p span {
+  font-weight: 400;
+  color: #666;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bigNFTSlider_box_left_bidding_box_auction {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.bigNFTSlider_box_left_bidding_box_icon {
+  font-size: 1.3rem;
+  color: #f44336;
+}
+
+.bigNFTSlider_box_left_bidding_box_timer {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.bigNFTSlider_box_left_bidding_box_timer_item p {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.bigNFTSlider_box_left_bidding_box_timer_item span {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.bigNFTSlider_box_left_button {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.bigNFTSlider_box_left_slideBtn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.bigNFTSlider_box_left_slideBtn_icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.bigNFTSlider_box_left_slideBtn_icon:hover {
+  color: #000;
+}
+
+/* Right side NFT Image */
+.bigNFTSlider_box_right_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bigNFTSlider_box_right_box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bigNFTSlider_box_right_box_like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: #e0245e;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
+.bigNFTSlider_box_right_box_like svg {
+  font-size: 1.3rem;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .bigNFTSlider_box {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .bigNFTSlider_box_left,
+  .bigNFTSlider_box_right {
+    padding: 1rem 0;
+  }
+
+  .bigNFTSlider_box_left h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .bigNFTSlider_box_left_creator,
+  .bigNFTSlider_box_left_bidding {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bigNFTSlider_box_left_creator_profile {
+    justify-content: center;
+  }
+
+  .bigNFTSlider_box_left_creator_collection {
+    justify-content: center;
+  }
+
+  .bigNFTSlider_box_left_bidding_box_auction {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bigNFTSlider_box_left_bidding_box_timer {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .bigNFTSlider_box_left_button {
+    justify-content: center;
+  }
+
+  .bigNFTSlider_box_left_slideBtn {
+    justify-content: center;
+  }
+
+  .bigNFTSlider_box_right_box_like {
+    top: 8px;
+    right: 8px;
+    padding: 0.3rem 0.6rem;
+  }
+}
