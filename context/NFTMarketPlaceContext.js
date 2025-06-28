@@ -1,7 +1,8 @@
 'use client';
 import React, { useState, useEffect, createContext } from 'react';
 import Web3Modal from 'web3modal';
-import { ethers, parseUnits, formatUnits } from "ethers";
+// Updated ethers import for v6:
+import { BrowserProvider, Contract, utils, parseUnits, formatUnits } from "ethers";
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 
@@ -10,7 +11,7 @@ import { NFTMarketPlaceAddress, NFTMarketPlaceABI } from './Constants';
 
 // Fetching contract
 const fetchContract = (signerOrProvider) =>
-  new ethers.Contract(NFTMarketPlaceAddress, NFTMarketPlaceABI, signerOrProvider);
+  new Contract(NFTMarketPlaceAddress, NFTMarketPlaceABI, signerOrProvider);
 
 // CONNECTING WITH SMART CONTRACT
 const connectingWithSmartContract = async () => {
@@ -22,7 +23,7 @@ const connectingWithSmartContract = async () => {
 
     const web3Modal = new Web3Modal({ cacheProvider: false });
     const connection = await web3Modal.connect();
-    const provider = new ethers.BrowserProvider(connection);
+    const provider = new BrowserProvider(connection);
     const signer = await provider.getSigner();
     return fetchContract(signer);
   } catch (error) {
@@ -171,7 +172,7 @@ export const NFTMarketPlaceProvider = ({ children }) => {
   // FETCH ALL THE NFTs
   const fetchNFTs = async () => {
     try {
-      const provider = new ethers.BrowserProvider(window.ethereum);
+      const provider = new BrowserProvider(window.ethereum);
       const contract = fetchContract(provider);
       const data = await contract.fetchmarketitem();
 
@@ -225,7 +226,8 @@ export const NFTMarketPlaceProvider = ({ children }) => {
   function safeFormatUnits(value, decimals = "ether") {
     try {
       if (value == null) return "";
-      return ethers.utils.formatUnits(value.toString(), decimals);
+      // Changed this line for ethers v6:
+      return formatUnits(value.toString(), decimals);
     } catch {
       return "";
     }
