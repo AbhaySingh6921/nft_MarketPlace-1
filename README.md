@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🖼️ NFT Marketplace
+A fully functional NFT Marketplace where users can mint, list, buy, and trade NFTs on the blockchain. The platform features a sleek, responsive frontend built with Next.js and pure CSS, and a robust smart contract backend powered by Solidity and Hardhat.
 
-## Getting Started
+✨ Features
+✅ Mint your own NFTs
+✅ List NFTs for sale
+✅ Purchase NFTs securely
+✅ Profile management with image upload
+✅ Clean, responsive UI using pure CSS
+✅ Fully connected to the blockchain (Sepolia/Testnet)
 
-First, run the development server:
+⚠️ Note: API routes and database (MongoDB) integration are not yet implemented. Work is in progress to add user authentication and persistent backend features.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⚒️ Tech Stack
+Frontend:
+Next.js
+React
+Pure CSS (No Tailwind)
+Ethers.js / Web3Modal
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Backend:
+Solidity Smart Contracts
+Hardhat (development, testing, deployment)
+IPFS (for NFT metadata)
+Pinata (optional for image hosting)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Planned Backend Features (Work in Progress):
+API routes using Next.js API
+MongoDB database integration
+User authentication and profile storage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Smart Contracts
+NftMarketplace.sol
+Core marketplace logic for listing, buying, and transferring NFTs.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📝 To-Do / Future Improvements
+API routes and MongoDB integration (Work in Progress)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+User authentication system
+Add sorting and filtering options
+Improve wallet integration UX
+Enhance mobile responsiveness
+Integrate notifications system
 
-## Deploy on Vercel
+🧑‍💻 Author
+Abhay Singh
+NFT Marketplace built with love for blockchain enthusiasts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🛡️ License
+This project is licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
