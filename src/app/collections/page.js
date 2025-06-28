@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 //internal import
 import Style from '../../../style/collection.module.css';
