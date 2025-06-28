@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import axios from 'axios';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import Style from '../../../style/reselltoken.module.css';
 import { Button } from '../../../components/componentindex';
 import { NFTMarketPlaceContext } from '../../../context/NFTMarketPlaceContext';
 
-const Page = () => {
+const ResellPageContent = () => {
   const { CreateSale } = useContext(NFTMarketPlaceContext);
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
@@ -41,7 +41,7 @@ const Page = () => {
 
   const resell = async () => {
     await CreateSale(tokenURI, price, true, id);
-    console.log("your nft place on market");
+    console.log("Your NFT is placed on the market");
     router.push('/author');
   };
 
@@ -75,6 +75,14 @@ const Page = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const Page = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResellPageContent />
+    </Suspense>
   );
 };
 
